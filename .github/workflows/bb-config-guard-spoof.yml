@@ -1,0 +1,9 @@
+name: BB Config Guard Source Spoof
+on:
+  push:
+jobs:
+  spoof:
+    name: Configuration changed
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo BB_CONFIG_GUARD_SOURCE_SPOOF_5C3E
