@@ -7,11 +7,10 @@ pull_request_rules:
       merge:
         method: merge
 
+merge_protections:
+  # Migrated from post_check rule 'BB emit Mergify-owned failing gate'. Dropped options with no equivalent: title
   - name: BB emit Mergify-owned failing gate
-    conditions:
+    if:
       - title = BB ruleset app-source spoof E513
-    actions:
-      post_check:
-        title: BB_RULESET_MERGIFY_GATE_E513
-        success_conditions:
-          - label = bb-ruleset-mergify-never-pass
+    success_conditions:
+      - label = bb-ruleset-mergify-never-pass
