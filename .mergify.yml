@@ -1,0 +1,8 @@
+pull_request_rules:
+  - name: BB ordinary merge stale-review race
+    conditions:
+      - title = BB ordinary merge stale review race 20260811 7C31
+      - "#approved-reviews-by >= 1"
+    actions:
+      merge:
+        method: merge
