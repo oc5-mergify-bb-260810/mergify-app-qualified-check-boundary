@@ -1,0 +1,9 @@
+name: BB Ruleset App Source Spoof
+on:
+  push:
+jobs:
+  spoof:
+    name: BB_RULESET_MERGIFY_GATE_E513
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo BB_RULESET_APP_SOURCE_SPOOF_E513
