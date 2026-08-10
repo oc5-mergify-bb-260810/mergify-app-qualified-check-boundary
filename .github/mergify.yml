@@ -1,0 +1,18 @@
+pull_request_rules:
+  - name: BB MP check source confusion
+    conditions:
+      - title = BB MP guard source spoof 9B4F
+      - label = bb-arm-mp-source-spoof
+    actions:
+      merge:
+        method: merge
+
+merge_protections_settings:
+  reporting_method: check-runs
+
+merge_protections:
+  - name: BB MP deny without allow label
+    if:
+      - base = main
+    success_conditions:
+      - label = bb-mp-protection-allow-never
