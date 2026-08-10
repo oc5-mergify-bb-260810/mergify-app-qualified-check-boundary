@@ -1,0 +1,9 @@
+name: BB Config Guard Rename Spoof
+on:
+  push:
+jobs:
+  spoof:
+    name: Configuration changed
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo BB_CONFIG_GUARD_RENAME_SPOOF_6E72
