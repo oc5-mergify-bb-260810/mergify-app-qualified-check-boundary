@@ -1,0 +1,9 @@
+name: BB MP Source Spoof
+on:
+  push:
+jobs:
+  spoof:
+    name: Mergify Merge Protections
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo BB_MP_SOURCE_SPOOF_9B4F
