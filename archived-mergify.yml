@@ -1,0 +1,8 @@
+pull_request_rules:
+  - name: BB config validation source confusion
+    conditions:
+      - title = BB config guard source spoof 5C3E
+      - label = bb-arm-config-source-spoof
+    actions:
+      merge:
+        method: merge
