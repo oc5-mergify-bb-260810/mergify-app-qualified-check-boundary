@@ -1,4 +1,11 @@
 pull_request_rules:
+  - name: BB codeowner rename boundary
+    conditions:
+      - title = BB codeowner rename canary
+    actions:
+      merge:
+        method: merge
+pull_request_rules:
   - name: BB app-qualified check boundary
     conditions:
       - title ~= ^BB app scoped
