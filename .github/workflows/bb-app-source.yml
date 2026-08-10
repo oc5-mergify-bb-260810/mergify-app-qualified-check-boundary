@@ -4,4 +4,14 @@ on:
 jobs:
   gate:
     name: BB_APP_SCOPED_GATE_20260810_5D71
+    if: ${{ github.event.pull_request.title == 'BB app scoped expected positive' }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo expected-github-actions-source
+name: BB App Scoped Source
+on:
+  pull_request:
+jobs:
+  gate:
+    name: BB_APP_SCOPED_GATE_20260810_5D71
     if: ${{ github.event.pull_request.title == 'BB app scoped expected positive' }}\n    runs-on: ubuntu-latest\n    steps:\n      - run: echo expected-github-actions-source\n
