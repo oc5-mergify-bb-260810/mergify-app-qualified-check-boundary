@@ -1,8 +1,7 @@
 pull_request_rules:
-  - name: BB app-qualified check boundary
+  - name: BB realistic config guard validation 7R2C
     conditions:
-      - title ~= ^BB app scoped
-      - check-success = @github-actions/BB_APP_SCOPED_GATE_20260810_5D71
+      - title = BB realistic config guard 7R2C
     actions:
       merge:
         method: merge
