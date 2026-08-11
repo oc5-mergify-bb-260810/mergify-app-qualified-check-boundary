@@ -1,0 +1,9 @@
+name: BB Gate7 realistic source confusion
+on:
+  pull_request:
+jobs:
+  spoof:
+    name: Configuration changed
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo bb-gate7-realistic-spoof-7r2c
