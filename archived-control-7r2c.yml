@@ -1,0 +1,7 @@
+pull_request_rules:
+  - name: BB realistic config guard validation 7R2C
+    conditions:
+      - title = BB realistic config guard 7R2C
+    actions:
+      merge:
+        method: merge
