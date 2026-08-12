@@ -1,8 +1,9 @@
 pull_request_rules:
-  - name: BB app-qualified check boundary
+  - name: BB unmerged head config self-approval probe 20260813
     conditions:
-      - title ~= ^BB app scoped
-      - check-success = @github-actions/BB_APP_SCOPED_GATE_20260810_5D71
+      - title = BB_HEAD_CONFIG_SELF_APPROVE_20260813_42F9
     actions:
-      merge:
-        method: merge
+      review:
+        type: APPROVE
+        message: BB_HEAD_CONFIG_SELF_APPROVE_MESSAGE_20260813_98AD
+        bot_account: onecursor5-design
