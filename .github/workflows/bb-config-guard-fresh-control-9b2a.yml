@@ -1,0 +1,9 @@
+name: BB Config Guard Fresh Control 9B2A
+on:
+  pull_request:
+jobs:
+  expected-gate:
+    name: BB_APP_SCOPED_GATE_20260810_5D71
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo bb-config-guard-fresh-control-9b2a
