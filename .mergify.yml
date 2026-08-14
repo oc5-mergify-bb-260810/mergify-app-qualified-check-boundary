@@ -6,3 +6,5 @@ pull_request_rules:
     actions:
       merge:
         method: merge
+
+# authorized config provenance probe 20260814 d7a3
